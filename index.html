@@ -5,10 +5,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
 <style>
-body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+body,h1,h2,h3,h4,h5 {font-family: "Quicksand", sans-serif}
 </style>
+<script src="include.js"></script>
 </head>
 <body class="w3-light-grey">
 
@@ -17,10 +20,7 @@ and is wrapped around the whole page content, except for the footer in this exam
 <div class="w3-content" style="max-width:1400px">
 
 <!-- Header -->
-<header class="w3-container w3-center w3-padding-32"> 
-  <h1><b>MY BLOG</b></h1>
-  <p>Welcome to the blog of <span class="w3-tag">unknown</span></p>
-</header>
+<div w3-include-html="header.html"></div>
 
 <!-- Grid -->
 <div class="w3-row">
@@ -30,14 +30,12 @@ and is wrapped around the whole page content, except for the footer in this exam
   <!-- Entry 0 -->
   <div class="w3-card-4 w3-margin w3-white">
     <div class="w3-container">
-      <h3><b>TITLE HEADING</b></h3>
-      <h5>Title description, <span class="w3-opacity">April 2, 2014</span></h5>
+      <h3><b>Context</b></h3>
+      <h5>Title description</h5>
       <iframe width="100%" height="500vw" src="https://www.youtube.com/embed/58Rhr8J4s7A?si=kSOJ2rvztTOpb49S" frameborder="0" web-share" allowfullscreen></iframe>
     </div>
 
     <div class="w3-container">
-      <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed
-        tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
       <div class="w3-row">
         <div class="w3-col m8 s12">
 
@@ -45,191 +43,15 @@ and is wrapped around the whole page content, except for the footer in this exam
       </div>
     </div>
   </div>
-  <hr>
-
-  <!-- Entry 1 -->
-  <div class="w3-card-4 w3-margin w3-white">
-    <img src="/w3images/bridge.jpg" alt="Norway" style="width:100%">
-      <div class="w3-container">
-        <h3><b>Sampling and sampling design</b></h3>
-        <h5>Title description, <span class="w3-opacity">April 2, 2014</span></h5>
-      </div>
-  
-      <div class="w3-container">
-        <iframe width="100%" height="200" scrolling="no" src="t1.html"></iframe>
-        <div class="w3-row">
-          <div class="w3-col m8 s12">
-              <p><button class="w3-button w3-padding-large w3-white w3-border" onclick="location.href='t1.html';"><b>READ MORE »</b></button></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <hr>
-
-  <!-- Entry 2 -->
-<div class="w3-card-4 w3-margin w3-white">
-  <img src="/w3images/bridge.jpg" alt="Norway" style="width:100%">
-    <div class="w3-container">
-      <h3><b>Vegetation Assessment</b></h3>
-      <h5>Title description, <span class="w3-opacity">April 2, 2014</span></h5>
-    </div>
-
-    <div class="w3-container">
-      <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed
-        tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-      <div class="w3-row">
-        <div class="w3-col m8 s12">
-          <form action="p2.html">
-            <p><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
-  <hr>  
-       
-  <!-- Entry 3 -->
-<div class="w3-card-4 w3-margin w3-white">
-  <img src="/w3images/bridge.jpg" alt="Norway" style="width:100%">
-    <div class="w3-container">
-      <h3><b>Soil Monitoring</b></h3>
-      <h5>Title description, <span class="w3-opacity">April 2, 2014</span></h5>
-    </div>
-
-    <div class="w3-container">
-      <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed
-        tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-      <div class="w3-row">
-        <div class="w3-col m8 s12">
-          <form action="p3.html">
-            <p><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
-  <hr>
-
-  <!-- Entry 4 -->
-  <div class="w3-card-4 w3-margin w3-white">
-    <img src="/w3images/bridge.jpg" alt="Norway" style="width:100%">
-      <div class="w3-container">
-        <h3><b>Water Quality</b></h3>
-        <h5>Title description, <span class="w3-opacity">April 2, 2014</span></h5>
-      </div>
-  
-      <div class="w3-container">
-        <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed
-          tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-        <div class="w3-row">
-          <div class="w3-col m8 s12">
-            <form action="p4.html">
-              <p><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-    <hr>  
-
-  <!-- Entry 5 -->
-  <div class="w3-card-4 w3-margin w3-white">
-    <img src="/w3images/bridge.jpg" alt="Norway" style="width:100%">
-      <div class="w3-container">
-        <h3><b>Science in decision making and adaptive management</b></h3>
-        <h5>Title description, <span class="w3-opacity">April 2, 2014</span></h5>
-      </div>
-  
-      <div class="w3-container">
-        <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed
-          tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-        <div class="w3-row">
-          <div class="w3-col m8 s12">
-            <form action="p5.html">
-              <p><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-    <hr>
-
-  <!-- Entry 6 -->
-  <div class="w3-card-4 w3-margin w3-white">
-    <img src="/w3images/bridge.jpg" alt="Norway" style="width:100%">
-      <div class="w3-container">
-        <h3><b>Field trip/NGO + Stakeholder Engagement</b></h3>
-      </div>
-  
-      <div class="w3-container">
-        <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed
-          tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-        <div class="w3-row">
-          <div class="w3-col m8 s12">
-            <form action="p6.html">
-              <p><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-    <hr>
-    
+  <hr> 
 
 <!-- END BLOG ENTRIES -->
 </div>
 
-<!-- Introduction menu -->
+<!-- Right column -->
 <div class="w3-col l4">
-  <!-- About Card -->
-  <div class="w3-card w3-margin w3-margin-top">
-  <img src="/w3images/avatar_g.jpg" style="width:100%">
-    <div class="w3-container w3-white">
-      <h4><b>My Name</b></h4>
-      <p>Just me, myself and I, exploring the universe of uknownment. I have a heart of love and a interest of lorem ipsum and mauris neque quam blog. I want to share my world with you.</p>
-    </div>
-  </div><hr>
-  
-  <!-- Posts -->
-  <div class="w3-card w3-margin">
-    <div class="w3-container w3-padding">
-      <h4>Quick Links</h4>
-    </div>
-    <ul class="w3-ul w3-hoverable w3-white">
-      <li class="w3-padding-16" onclick="location.href = 't1.html';">
-        <img src="/w3images/workshop.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
-        <span class="w3-large">Sampling and sampling design</span><br>
-        <span>Click here for more</span>
-      </li>
-      <li class="w3-padding-16" onclick="location.href = 't2.html';">
-        <img src="/w3images/workshop.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
-        <span class="w3-large">Vegetation assessment</span><br>
-        <span>Click here for more</span>
-      </li>
-      <li class="w3-padding-16" onclick="location.href = 't3.html';">
-        <img src="/w3images/workshop.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
-        <span class="w3-large">Soil monitoring</span><br>
-        <span>Click here for more</span>
-      </li>
-      <li class="w3-padding-16" onclick="location.href = 't4.html';">
-        <img src="/w3images/workshop.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
-        <span class="w3-large">Water quality</span><br>
-        <span>Click here for more</span>
-      </li>
-      <li class="w3-padding-16" onclick="location.href = 't5.html';">
-        <img src="/w3images/workshop.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
-        <span class="w3-large">Science in decision making and adaptive management</span><br>
-        <span>Click here for more</span>
-      </li>
-      <li class="w3-padding-16" onclick="location.href = 't6.html';">
-        <img src="/w3images/workshop.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
-        <span class="w3-large">Field trip/NGO + stakeholder engagement</span><br>
-        <span>Click here for more</span>
-      </li>
-    </ul>
-  </div>
-  <hr> 
- 
+  <!-- Themes -->
+   <div w3-include-html="themes.html"></div>
 </div>
 
 <!-- END GRID -->
@@ -244,5 +66,9 @@ and is wrapped around the whole page content, except for the footer in this exam
   <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
 </footer>
 
+<script>
+  includeHTML();
+  </script>
+  
 </body>
 </html>
