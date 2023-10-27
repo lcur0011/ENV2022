@@ -8,9 +8,11 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="flow.css">
 <style>
 body,h1,h2,h3,h4,h5 {font-family: "Quicksand", sans-serif}
 </style>
+<script src="include.js"></script>
 </head>
 <body class="w3-light-grey">
 
@@ -19,75 +21,85 @@ and is wrapped around the whole page content, except for the footer in this exam
 <div class="w3-content" style="max-width:1400px">
 
 <!-- Header -->
-<header class="w3-container w3-center w3-padding-32"> 
-  <h1><b>MY BLOG</b></h1>
-  <p>Welcome to the blog of <span class="w3-tag">unknown</span></p>
-</header>
+<div w3-include-html="header.html"></div>
 
 <!-- Grid -->
 <div class="w3-row">
 
 <!-- Blog entries -->
-<div class="w3-col l8 s12">
+<div class="w3-col s9">
   <!-- Blog entry -->
   <div class="w3-card-4 w3-margin w3-white">
-    <img src="/w3images/woods.jpg" alt="Nature" style="width:100%">
     <div class="w3-container">
-      <h3><b>References</b></h3>
+      <h3 class="w3-blue-grey w3-padding"><b>References</b></h3>
     </div>
 
     <div class="w3-container">
-      <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed
-        tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-      <div class="w3-row">
+    <div class="w3-row">
+        <h3>Context (Ecologi)</h3>
+        <div style="padding-left: 36px; text-indent: -36px;">
+            <p>Ecologi. (n.d.). <i>Our reforestation projects in Australia.</i> <a href="https://ecologi.com/projects/wildlife-corridors-koalas-australia" target="_blank">https://ecologi.com/projects/wildlife-corridors-koalas-australia </a>  </p>
+            <p>Environment SA. (2019, August). <i>5 top reasons to plant natives in your garden.</i> <a href=" https://www.environment.sa.gov.au/goodliving/posts/2019/08/benefits-of-native-gardens" target="_blank"> https://www.environment.sa.gov.au/goodliving/posts/2019/08/benefits-of-native-gardens</a></p>
+            <p>NARvis. (n.d.). <i>Invasive Species – Background Information.</i> Natural Resource Management Vision for the Northern Agricultural Region of Western Australia. <a href="https://narvis.com.au/the-region/invasive-species-background/#:~:text=Invasive%20species%20can%20seriously%20affect,for%20food%20and%20cultural%20practices" target="_blank" style="text-wrap: break-word;">https://narvis.com.au/the-region/invasive-species-background/#:~:text=Invasive%20species%20can%20seriously%20affect,for%20food%20and%20cultural%20practices </a></p>
+            <p>Vizzuality. (n.d.). <i>Australia Deforestation Rates & Statistics.</i> Global Forest Watch. <a href="https://www.globalforestwatch.org/dashboards/country/AUS/?category=undefined" target="_blank">https://www.globalforestwatch.org/dashboards/country/AUS/?category=undefined </a></p>
+        </div>
+    </div>
+    <div class="w3-row">
+        <h3>Theme 1</h3>
+        <div style="padding-left: 36px; text-indent: -36px;">
+            <p>Lindenmayer, DB and Likens, GE. (2010). The science and application of ecological monitoring. <i>Biological Conservation</i>. 143(6). pp. 1317–1328.</p>
+            <p>Spellerberg IF. (2010). Ecological monitoring. <i>Monitoring Ecological Change.</i> 2nd ed. doi:10.1017/CBO9780511614699.004</p>
+            <p>StudySmarter UK. (n.d.). <i>Quadrats: Definition, Sampling & Point</i> <a href="https://www.studysmarter.co.uk/explanations/environmental-science/environmental-research/quadrats/" target="_blank">https://www.studysmarter.co.uk/explanations/environmental-science/environmental-research/quadrats/</a></p>
+        </div>
       </div>
+    <div class="w3-row">
+        <h3>Theme 2</h3>
+        <div style="padding-left: 36px; text-indent: -36px;">
+            <p></p>
+        </div>      
+    </div>
+    <div class="w3-row">
+        <h3>Theme 3</h3>
+        <div style="padding-left: 36px; text-indent: -36px;">
+            <p></p>
+        </div>      
+    </div>
+    <div class="w3-row">
+        <h3>Theme 4</h3>
+        <div style="padding-left: 36px; text-indent: -36px;">
+            <p></p>
+        </div>      
+    </div>
+    <div class="w3-row">
+        <h3>Theme 5</h3>
+        <div style="padding-left: 36px; text-indent: -36px;">
+            <p>Karrer L, Beldia II P, Dennison B, Dominici A, Dutra G, English C, Gunawan T, Hastings J, Katz L, Kelty R, McField M, Nunez E, Obura D, Ortiz F, Quesada M, Sivo L, and Stone G (2011). <i> Science-to-Action Guidebook. </i>Science and Knowledge Division, Conservation International, Arlington, Virginia, USA.</p>
+        </div>      
+    </div>
+    <div class="w3-row">
+        <h3>Theme 6</h3>
+        <div style="padding-left: 36px; text-indent: -36px;">
+            <p>Friends of Scotchman's Creek and Valley Reserve. (n.d.). 
+            <div style="padding-left: 36px;">
+                <p><i> Events and News. </i><a href="https://www.scotchmanscreekfriends.org.au/events.htm" target="_blank"> https://www.scotchmanscreekfriends.org.au/events.htm </a></p>
+                <p><i> Home. </i><a href="https://www.scotchmanscreekfriends.org.au/home.htm" target="_blank"> https://www.scotchmanscreekfriends.org.au/home.htm </a></p>
+                <p><i> 	
+                    Membership of the Friends of Scotchmans Creek and Valley Reserve. </i><a href="https://www.scotchmanscreekfriends.org.au/membership.htm" target="_blank"> https://www.scotchmanscreekfriends.org.au/membership.htm </a></p>
+                <p><i> Waterwatch. </i><a href="https://www.scotchmanscreekfriends.org.au/waterwatch.htm" target="_blank"> https://www.scotchmanscreekfriends.org.au/waterwatch.htm </a></p>
+            </div>
+            
+         
+            <p>Melbourne Water. (n.d.). <i>Huntingdale Wetlands Litter Trap Upgrade.</i> <a href="https://www.melbournewater.com.au/services/projects/huntingdale-wetlands-litter-trap-upgrade" target="_blank"> https://www.melbournewater.com.au/services/projects/huntingdale-wetlands-litter-trap-upgrade</a> </p>
+        </div>      
+    </div>
     </div>
   </div>
 <!-- END BLOG ENTRIES -->
 </div>
 
-<!-- Introduction menu -->
-<div class="w3-col l4">
- 
-  <!-- Posts -->
-  <div class="w3-card w3-margin">
-    <div class="w3-container w3-padding">
-      <h4>Themes</h4>
-    </div>
-    <ul class="w3-ul w3-hoverable w3-white">
-      <li class="w3-padding-16" onclick="location.href = 't1.html';">
-        <img src="/w3images/workshop.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
-        <span class="w3-large">Sampling and sampling design</span><br>
-        
-      </li>
-      <li class="w3-padding-16" onclick="location.href = 't2.html';">
-        <img src="/w3images/workshop.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
-        <span class="w3-large">Vegetation assessment</span><br>
-        
-      </li>
-      <li class="w3-padding-16" onclick="location.href = 't3.html';">
-        <img src="/w3images/workshop.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
-        <span class="w3-large">Soil monitoring</span><br>
-        
-      </li>
-      <li class="w3-padding-16" onclick="location.href = 't4.html';">
-        <img src="/w3images/workshop.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
-        <span class="w3-large">Water quality</span><br>
-        
-      </li>
-      <li class="w3-padding-16" onclick="location.href = 't5.html';">
-        <img src="/w3images/workshop.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
-        <span class="w3-large">Science in decision making and adaptive management</span><br>
-      </li>
-      <li class="w3-padding-16" onclick="location.href = 't6.html';">
-        <img src="/w3images/workshop.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
-        <span class="w3-large">Field trip/NGO + stakeholder engagement</span><br>
-      </li>
-    </ul>
-  </div>
-  <hr>   
-<!-- END Introduction Menu -->
-</div>
+<!-- Right column -->
+     <div w3-include-html="themes.html"></div>
+
 
 <!-- END GRID -->
 </div><br>
@@ -98,10 +110,6 @@ and is wrapped around the whole page content, except for the footer in this exam
 <!-- Footer -->
 <footer class="w3-container w3-dark-grey w3-padding-32 w3-margin-top">
   <button class="w3-button w3-black w3-padding-large w3-margin-bottom" onclick="location.href='index.html';">Home</button>
-  <div style="float: right;">
-  <button class="w3-button w3-black w3-disabled w3-padding-large w3-margin-bottom">Previous</button>
-  <button class="w3-button w3-black w3-padding-large w3-margin-bottom" onclick="location.href='t2.html';">Next »</button>
-  </div>
   <br>
   <button onclick="location.href='ref.html';">References</button>
   <p style="float: right;">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>

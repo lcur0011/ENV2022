@@ -8,6 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="flow.css">
 <style>
 body,h1,h2,h3,h4,h5 {font-family: "Quicksand", sans-serif}
 </style>
@@ -21,38 +22,77 @@ and is wrapped around the whole page content, except for the footer in this exam
 
 <!-- Header -->
 <div w3-include-html="header.html"></div>
+<div class="w3-container w3-center">
+  <h1 style="font-size: xxx-large;"><b>Vegetation Assessment</b></h1>
+</div>
 
 <!-- Grid -->
 <div class="w3-row">
 
 <!-- Blog entries -->
-<div class="w3-col l8 s12">
+<div class="w3-col s9">
   <!-- Blog entry -->
   <div class="w3-card-4 w3-margin w3-white">
-    <img src="/w3images/woods.jpg" alt="Nature" style="width:100%">
     <div class="w3-container">
-      <h3><b>TITLE HEADING</b></h3>
-      <h5>Title description, <span class="w3-opacity">April 7, 2014</span></h5>
-    </div>
+      <div class="w3-row w3-padding">
+        <div class="slideshow-container">
 
-    <div class="w3-container">
-      <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed
-        tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-      <div class="w3-row">
+          <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <div>
+              <h2 class="w3-text-blue-gray w3-center">Experiences</h2>
+              <div class="w3-row">
+                <div class="w3-col s9" style="font-size: large;">
+                  <ul>
+                  <li><u>Vegetation survey:</u> used sampling techniques to assess the vegetation in the Jock Marshall Reserve. This involved recognising native and invasive species in 1m<sup>2</sup> quadrats. Quadrats were spaced 5m apart across transects.  </li>
+                  <li><u>Habitat hectares assessment:</u> assessed various vegetation categories outlined by Victorian Energy, Environment and Climate Action (2004) and compare this to a benchmark value outlined for the particular EVC in order to determine quality of vegetation. This method accounts for variation between assessors. </li>
+                  </ul>
+                </div>
+                <div class="w3-col s3 w3-padding">
+                  <img src="quadrat.jpg" width="100%">
+                  <figcaption>An example quadrat from the vegetation survey</figcaption>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <h2 class="w3-text-blue-gray w3-center">Challenges</h2>
+            <ul style="font-size: large;">
+              <li><u>Identifying native and non-native species:</u> A list of species that can be found in the Jock Marshall Reserve are <a href="https://www.monash.edu/jock-marshall-reserve/fauna-and-flora/flora" target="_blank">listed online.</a> However, a list like this won't exist for every ecosystem so it is important to work with the local community as their knowledge can be helpful.</li>
+              <li>Making coverage estimates:</li>
+            </ul>
+          </div>
+          
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <div>
+            <h2 class="w3-text-blue-gray w3-center">Applications</h2>
+            </div>
+          </div>
+          
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+                    
+          <br>
+          <!-- The dots/circles -->
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+          </div>
+          
+        </div>
       </div>
-    </div>
   </div>
   <hr>
 <!-- END BLOG ENTRIES -->
 </div>
 
-<!-- Introduction menu -->
-<div class="w3-col l4">
- 
-  <!-- Themes -->
+<!-- Right column -->
   <div w3-include-html="themes.html"></div> 
-<!-- END Introduction Menu -->
-</div>
+
 
 <!-- END GRID -->
 </div><br>
@@ -74,6 +114,8 @@ and is wrapped around the whole page content, except for the footer in this exam
 
 <script>
   includeHTML();
+  let slideIndex = 1;
+  showSlides(slideIndex);
   </script>
 
 </body>

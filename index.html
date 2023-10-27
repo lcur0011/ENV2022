@@ -8,6 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="flow.css">
 <style>
 body,h1,h2,h3,h4,h5 {font-family: "Quicksand", sans-serif}
 </style>
@@ -21,18 +22,76 @@ and is wrapped around the whole page content, except for the footer in this exam
 
 <!-- Header -->
 <div w3-include-html="header.html"></div>
-
+<div class="w3-container w3-center">
+  <h1 style="font-size: xxx-large;"><b>Context</b></h1>
+</div>
 <!-- Grid -->
 <div class="w3-row">
 
 <!-- Entries -->
-<div class="w3-col l8 s12">
+<div class="w3-col s9">
   <!-- Entry 0 -->
-  <div class="w3-card-4 w3-margin w3-white">
+  <div class="w3-card-4 w3-margin w3-blue-grey">
     <div class="w3-container">
-      <h3><b>Context</b></h3>
-      <h5>Title description</h5>
-      <iframe width="100%" height="500vw" src="https://www.youtube.com/embed/58Rhr8J4s7A?si=kSOJ2rvztTOpb49S" frameborder="0" web-share" allowfullscreen></iframe>
+
+      <h4>
+        Below is an overview of Ecologi's reforestation project. 
+      </h4>
+      <h4>
+        Click on the themes (right) to review various land monitoring and management practices in the context of revegetation. 
+      </h4>
+    </div>
+    <div class="w3-container w3-white">
+      <p> 
+        Recently, Australia’s forests have faced destruction from various threats such as bushfires and human impact. In particular, the 2019-2020 bushfires caused a lot of damage to Australian forests (Global Forest Watch, n.d.). For this reason, as well as renewed interest after observing the projects in the JMR, I have decided to review one of Ecologi’s climate projects – in particular their reforestation project.
+      </p>
+      <p>
+        Ecologi uses crowd funding to plant trees in areas where they have been lost. By planting trees, they hope to achieve several goals including restoring biodiversity, recovering lost habitats, and CO2 reduction (Ecologi, n.d.).
+      </p>
+      <p>
+        Ecologi is focusing on three areas that have been impacted by bushfires (locations in Victoria, South Australia, and from New South Wales to Queensland) and will be planting native trees. Native trees are important because they already suit the environment, provide food and habitats to local wildlife, improve biodiversity, and encourage connection to Country – articularly for Indigenous Communities (Environment SA, n.d.). One thing to note is the concern about invasive species, which can affect the ecology within an area. Invasive species can impact plant and animal populations, cause soil erosion, and even spread diseases and parasites (Natural Resource Management Vision for The Northern Agricultural Region of Western Australia, n.d.).
+      </p>
+      <p>It is quite straightforward to relate this project to several of the themes from this unit:</p>
+      <table >
+        <tr>
+          <th>Theme</th>
+          <th>Application</th>
+        </tr>
+        <tr>
+          <td>Sampling and Sampling Design</td>
+          <td>Design a sampling strategy for a large area that allows us to get a holistic view of the environment</td>
+        </tr>
+        <tr>
+          <td>Vegetation Assessment	Vegetation assessment to determine if invasive plants will prevent new trees from growing</td>
+          <td>Vegetation Assessment	Vegetation assessment to determine if invasive plants will prevent new trees from growing</td>
+        </tr>
+      </tr>
+      <tr>
+        <td>Water Quality</td>
+        <td>Assess health of aquatic ecosystems and identify components in the area such as nutrients and pollution</td>
+      </tr>
+      <tr>
+        <td>Soil Monitoring</td>
+        <td>As soil health influences vegetation and nutrient run-off into water, it is important to develop an understanding of soil characteristics such as nutrient cycling, erosion, and sedimentation</td>
+      </tr>
+      <tr>
+        <td>GIS</td>
+        <td>Ecologi may use GIS to understand the spatial relationships between different ecosystem components. They may even create their own map to show where they have planted trees</td>
+      </tr>
+      <tr>
+        <td>Field Trip (Stakeholder/NGO Engagement)</td>
+        <td>Required in order to carry out assessments described above. Also a chance for Ecologi to talk to the community and understand what they need. </td>
+      </tr>
+      <tr>
+        <td>Science in Decision Making and Adaptive Management</td>
+        <td>By making prior assessments, ecology can determine what types of trees they need to grow to replenish the depleted area</td>
+      </tr>
+      </table>
+      <p>For a crowd funded project the most important of the themes is the field trip. There are many stakeholders for this reforestation project including the local community and non-government organisations (NGOs). Ecologi is partnering with One Tree Planted to carry out this goal (Ecologi, n.d.). The field trip will also offer an opportunity to advocate and fundraise for the project. </p>
+      <p>Admittedly, it is unlikely that Ecologi will utilise all available assessments to efficiently accomplish reforestation, however it is interesting to consider all the thought that goes into a process like this. It will be nice to follow along and see the impact this project has in the long run. </p>
+
+    
+
     </div>
 
     <div class="w3-container">
@@ -49,10 +108,7 @@ and is wrapped around the whole page content, except for the footer in this exam
 </div>
 
 <!-- Right column -->
-<div class="w3-col l4">
-  <!-- Themes -->
    <div w3-include-html="themes.html"></div>
-</div>
 
 <!-- END GRID -->
 </div><br>
@@ -68,7 +124,8 @@ and is wrapped around the whole page content, except for the footer in this exam
 
 <script>
   includeHTML();
-  </script>
+  myFunction();
+</script>
   
 </body>
 </html>

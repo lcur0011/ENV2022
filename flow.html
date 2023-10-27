@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="include.js"></script>
+  <link rel="stylesheet" href="flow.css">
+  <title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="flow.css">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Quicksand", sans-serif}
+</style>
+</head>
+<body>
+  <div class="template-wrap">
+  
+    <div class="ep-flowchart" id="ep-flowchart">
+      <div class="ep-svg-wrap">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 800">
+          <g id="Page-1" fill="none" fill-rule="evenodd">
+            <g id="Course-Template" transform="translate(0,15)">
+              <!-- Arrows -->
+              <g id="arrows" transform="translate(200, 0)">
+                <g id="arrows/arrow-1.2" transform="translate(0,74) rotate(90) ">
+                  <g id="arrow-1.2">
+                    <path id="Line" stroke="#89969F" stroke-linecap="square" d="M.336 2.5h38.46"/>
+                    <polygon id="Triangle" fill="#89969F" points="37 5 37 0 40 2.5"/>
+                  </g>
+                </g>
+                <g id="arrows/arrow-1.2" transform="translate(0,188) rotate(90) ">
+                  <g id="arrow-1.2">
+                    <path id="Line" stroke="#89969F" stroke-linecap="square" d="M.336 2.5h38.46"/>
+                    <polygon id="Triangle" fill="#89969F" points="37 5 37 0 40 2.5"/>
+                  </g>
+                </g>
+                <g id="arrows/arrow-3.4" transform="translate(0, 302) rotate(90) ">
+                  <g id="arrow-1.2">
+                    <path id="Line" stroke="#89969F" stroke-linecap="square" d="M.336 2.5h38.46"/>
+                    <polygon id="Triangle" fill="#89969F" points="37 5 37 0 40 2.5"/>
+                  </g>
+                </g>
+                <g id="arrows/arrow-4." transform="translate(0, 416) rotate(90)">
+                  <g id="arrow-1.2">
+                    <path id="Line" stroke="#89969F" stroke-linecap="square" d="M.336 2.5h38.46"/>
+                    <polygon id="Triangle" fill="#89969F" points="37 5 37 0 40 2.5"/>
+                  </g>
+                </g>
+                <g id="arrows/arrow-5.6" transform="translate(0, 496) rotate(90)">
+                  <g id="arrow-1.2">
+                    <path id="Line" stroke="#89969F" stroke-linecap="square" d="M.336 2.5h38.46"/>
+                    <polygon id="Triangle" fill="#89969F" points="37 5 37 0 40 2.5"/>
+                  </g>
+                </g>
+                <g id="arrows/arrow-6.7" transform="translate(0, 610) rotate(90)">
+                  <g id="arrow-1.2">
+                    <path id="Line" stroke="#89969F" stroke-linecap="square" d="M.336 2.5h38.46"/>
+                    <polygon id="Triangle" fill="#89969F" points="37 5 37 0 40 2.5"/>
+                  </g>
+                </g>
+                <g id="arrows/arrow-7.1" transform="translate(290,690) rotate(180)">
+                  <g id="arrow-4">
+                    <path id="Path-4" stroke="#89969F" d="M90 3H38.009C32.48 3 28 7.48 28 13v630c0 5.523 4.483 10 10.009 10H189"/>
+                    <polygon id="Triangle-2-Copy-2" fill="#89969F" points=" 187 656 187 650 190 653"/>
+                  </g>
+                </g>
+
+              </g>
+              87 573 87 567 90 570
+
+
+              <!-- Boxes -->
+              <g transform="translate(100,0)">
+              <g id="ep-content" class="ep-svg-block"
+                 @click="{{ display = true; selected = 'ep-content' }}"
+                 transform="translate(0, 0)">
+                <rect id="Rectangle" width="200" height="74" fill="#f1f1f1" rx="37"/>
+                <text id="Content" fill="#586075" font-family="Roboto-Regular, Roboto" font-size="18" letter-spacing="1">
+                  <tspan x="15" y="33">Conceptual model of</tspan> <tspan x="27" y="54">how system works</tspan>
+                </text>
+              </g>
+              <g id="ep-form" class="ep-svg-block"
+                 @click="{{ display = true; selected = 'ep-form' }}"
+                 transform="translate(10, 114)">
+                <rect id="Rectangle" width="180" height="74" fill="#f1f1f1" rx="37"/>
+                <text id="Content" fill="#586075" font-family="Roboto-Regular, Roboto" font-size="18" letter-spacing="1">
+                  <tspan x="20" y="33">Key questions to</tspan><tspan x="55" y="54">be posed</tspan>
+                </text>
+              </g>
+              <g id="ep-media" class="ep-svg-block"
+                 @click="{{ display = true; selected = 'ep-media' }}"
+                 transform="translate(0, 228)">
+                <rect id="Rectangle" width="200" height="74" fill="#f1f1f1" rx="37"/>
+                <text id="Content" fill="#586075" font-family="Roboto-Regular, Roboto" font-size="18" letter-spacing="1">
+                  <tspan x="15" y="33">Experimental survey </tspan> <tspan x="30" y="54"> or survey design</tspan>
+                </text>
+              </g>
+              <g id="ep-unity" class="ep-svg-block"
+                 @click="{{ display = true; selected = 'ep-unity' }}"
+                 transform="translate(-25 342)">
+                <rect id="Rectangle" width="250" height="74" fill="#f1f1f1" rx="37"/>
+                <text id="Content" fill="#586075" font-family="Roboto-Regular, Roboto" font-size="18" letter-spacing="1">
+                  <tspan x="22" y="33">Infrastructure or methods</tspan><tspan x="35" y="54">needed to gather data</tspan>
+                </text>
+              </g>
+              <g id="ep-elements" class="ep-svg-block"
+                 @click="{{ display = true; selected = 'ep-elements' }}"
+                 transform="translate(15 456)">
+                <rect id="Rectangle" width="170" height="40" fill="#f1f1f1" rx="20"/>
+                <text id="Elements-of-Design" fill="#586075" font-family="Roboto-Regular, Roboto" font-size="18" letter-spacing="1">
+                  <tspan x="23" y="25">Data collection</tspan>
+                </text>
+              </g>
+              <g id="ep-principles" class="ep-svg-block"
+                 @click="{{ display = true; selected = 'ep-principles' }}"
+                 transform="translate(0 536)">
+                <rect id="Rectangle" width="200" height="74" fill="#f1f1f1" rx="37"/>
+                <text id="Principles-of-Organi" fill="#586075" font-family="Roboto-Regular, Roboto" font-size="18" letter-spacing="1">
+                  <tspan x="27" y="33">Data analysis and</tspan><tspan x="40" y="54"> interpretation </tspan>
+                </text>
+              </g>
+              <g id="ep-final" class="ep-svg-block"
+                @click="{{ display = true; selected = 'ep-principles' }}"
+                transform="translate(-100 650)">
+              <rect id="Rectangle" width="400" height="74" fill="#f1f1f1" rx="37"/>
+              <text id="Principles-of-Organi" fill="#586075" font-family="Roboto-Regular, Roboto" font-size="18" letter-spacing="1">
+                <tspan x="30.707" y="33">Answer questions, complete synthesis and</tspan><tspan x="100" y="54"> publish/report findings </tspan>
+              </text>
+              </g>
+              </g>
+
+            </g>
+          </g>
+        </svg>
+        
+      </div>
+      
+  
+
+        
+  
+    </div>
+    
+  </div>
+
+  <script> src="include.js"</script>
+</body>
+</html>

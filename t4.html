@@ -8,6 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="flow.css">
 <style>
 body,h1,h2,h3,h4,h5 {font-family: "Quicksand", sans-serif}
 </style>
@@ -21,12 +22,15 @@ and is wrapped around the whole page content, except for the footer in this exam
 
 <!-- Header -->
 <div w3-include-html="header.html"></div>
+<div class="w3-container w3-center">
+  <h1 style="font-size: xxx-large;"><b>Water Quality</b></h1>
+</div>
 
 <!-- Grid -->
 <div class="w3-row">
 
 <!-- Blog entries -->
-<div class="w3-col l8 s12">
+<div class="w3-col s9">
   <!-- Blog entry -->
   <div class="w3-card-4 w3-margin w3-white">
     <img src="/w3images/woods.jpg" alt="Nature" style="width:100%">
@@ -47,10 +51,8 @@ and is wrapped around the whole page content, except for the footer in this exam
 </div>
 
 <!-- Right column -->
-<div class="w3-col l4">
-  <!-- Themes -->
    <div w3-include-html="themes.html"></div>
-</div>
+
 
 <!-- END GRID -->
 </div><br>
