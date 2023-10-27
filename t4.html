@@ -13,6 +13,7 @@
 body,h1,h2,h3,h4,h5 {font-family: "Quicksand", sans-serif}
 </style>
 <script src="include.js"></script>
+<base target="_blank">
 </head>
 <body class="w3-light-grey">
 
@@ -33,22 +34,59 @@ and is wrapped around the whole page content, except for the footer in this exam
 <div class="w3-col s9">
   <!-- Blog entry -->
   <div class="w3-card-4 w3-margin w3-white">
-    <img src="/w3images/woods.jpg" alt="Nature" style="width:100%">
-    <div class="w3-container">
-      <h3><b>TITLE HEADING</b></h3>
-      <h5>Title description, <span class="w3-opacity">April 7, 2014</span></h5>
-    </div>
+    <div class="w3-row w3-padding">
+      <div class="slideshow-container">
 
-    <div class="w3-container">
-      <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed
-        tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-      <div class="w3-row">
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <div>
+            <h2 class="w3-text-blue-gray w3-center">Experiences</h2>
+            <ul style="font-size: x-large;">
+              <li><u>Effects of urbanisation:</u> focusing on water health highlighted to me the <a href="https://oehha.ca.gov/media/downloads/ecotoxicology/fact-sheet/watercyclefacts_0.pdf"> impact that urbanisation has on our waterways</a> - both natural and man-made. Since our storm water systems suit the conditions, I never considered how all the concrete surfaces could have detrimental effects in heavy rainfall, or even the pollution risk it is causing now. </li>
+              <li><u>Benefit of data collection stations:</u> the JMR has a <a href="https://www.monash.edu/jock-marshall-reserve/environmental-monitoring">weather station and a weather monitoring system.</a> This ongoing data collection is incredibly value as it has endless applications. In particular, combining the data collection of these stations can provide unimaginable insight into what contributes to the overall health of an ecosystem.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <h2 class="w3-text-blue-gray w3-center">Challenges</h2>
+          <ul style="font-size: x-large;">
+            <li><u>Determining which ecosystem type is applicable:</u> there are many ecosystem types in Australia, and not only that, the state they are in affects the <a href="https://www.waterquality.gov.au/sites/default/files/documents/anzecc-armcanz-2000-guidelines-vol1.pdf">ANZECC benchmark values</a>. There can even be high variability within ecosystem types, for example wetlands, which makes it difficult to assess water quality.</li>
+            <li><u>Selecting representative samples:</u> the quality of water is impacted by many rapidly changing factors. This includes time of day, temperature, and seasonal changes. The simplest way to overcome depends on the data you are aiming to collect. If you want to assess water health over time, then samples should be taken a regular intervals and at the same time of day. If you are wanting to take a measurement at one point in time, take multiple samples in order to gain a more accurate understanding. </li>
+          </ul>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <div>
+          <h2 class="w3-text-blue-gray w3-center">Applications</h2>
+          <ul style="font-size: x-large;">
+            <li>Doing a water assessment will allow Ecologi to determine water availability and distribution. This will factor into their considerations when deciding which plants to use in their reforestation project.</li>
+            <li>A water quality assessment will determine if any pollutants will pose a threat to introduced wildlife. If there are toxic contaminants, this needs to be addressed before the reforestation takes place.</li>
+            <li>If there is a threat of pollution due to run-off, this provides more support for the revegetation to occur. Revegetation is one of the methods used to reduce erosion, so this will be helpful for the entire ecosystem.</li>
+          </ul>
+
+          </div>
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+                  
+        <br>
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+        
       </div>
     </div>
   </div>
   <hr>
 <!-- END BLOG ENTRIES -->
-</div>
+
 
 <!-- Right column -->
    <div w3-include-html="themes.html"></div>
@@ -68,12 +106,14 @@ and is wrapped around the whole page content, except for the footer in this exam
   <button class="w3-button w3-black w3-padding-large w3-margin-bottom" onclick="location.href='t5.html';">Next »</button>
   </div>
   <br>
-  <button onclick="location.href='ref.html';">References</button>
-  <p style="float: right;">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+  <button class="w3-button w3-light-grey" onclick="location.href='ref.html';">References</button>
+  <p style="float: right;">Powered by <a href="https://www.w3schools.com/w3css/default.asp">w3.css</a></p>
 </footer>
 
 <script>
   includeHTML();
+  let slideIndex = 1;
+  showSlides(slideIndex); 
   </script>
 
 </body>
